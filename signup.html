@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale = 1">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/fontawesome-all.js"></script>
+</head>
+<body>
+     <!-- NAVBAR  -->
+     <nav class="navbar navbar-expand-lg navbar-light bg-danger py-3">
+        <div class="container">
+                <a class="navbar-brand text-white" href="#">Buy and Sell</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="login.html" class="btn btn-warning">Login</a>
+                    </li>
+                            
+                </div>
+        </div>
+      </nav>
+      <!-- NAVABAR END -->
+
+      <!-- LOGIN BEGINS HERE -->
+      <section id="login-section">
+         <div class="container">
+          <div class="row">
+              <div class="col">
+                <h4 class="text-center mt-3">Sign Up Here</h4>
+            </div>
+        </div>
+            <div class="row my-2 justify-content-center align-items-center">
+                    <div class="col-md-6 col-sm-12">
+                        <form id="login-form" class="form-horizontal">
+                            <div class="form-group row">
+                                <label for="fname" class="col-md-4  col-form-label">Enter Firstame: </label>
+                                <input type="text" name="fname" id="fname" class="form-control col-md-8" placeholder="Firstname">
+                            </div>
+                            <div class="form-group row">
+                                <label for="lname" class="col-md-4 col-sm-12 col-form-label">Enter Lastname: </label>
+                                <input type="text" name="lname" id="lname" class="form-control col-md-8" placeholder="Lastname">
+                            </div>
+                            <div class="form-group row">
+                                <label for="username" class="col-md-4 col-form-label">Enter Username: </label>
+                                <input type="text" name="username" id="username" class="form-control col-md-8" placeholder="Username">
+                            </div>
+                            <div class="form-group row">
+                                <label for="email" class="col-md-4 col-form-label">Enter Email address: </label>
+                                <input type="email" name="email" id="email" class="form-control col-md-8" placeholder="Email address">
+                            </div>
+                            <div class="form-group row">
+                                <label for="password" class="col-md-4 col-form-label">Enter Password: </label>
+                                <input type="password" name="password" id="password" class="form-control col-md-8" placeholder="Password">
+                            </div>
+                            <div class="form-group row">
+                                <label for="password" class="col-md-4 col-form-label">Confirm Password: </label>
+                                <input type="password" name="password" id="password" class="form-control col-md-8" placeholder="confirmPassword">
+                            </div>
+                            <a href="index.html" class="btn btn-primary btn-block" value="submit">Submit</a>
+                            <button class="btn btn-dark btn-block mt-2" value="reset">Reset</button>
+                        </form>
+                        
+                    </div>   
+                    </div>
+                </div>   
+          
+        </div>
+      </section>
+      <!-- LOGIN ENDS HERE -->
+
+    <!-- FOOTER -->
+    <footer  class="bg-primary py-3 footer signup-footer">
+       <p class="text-center text-white">Handuah &copy; 2019</p>
+    </footer>
+
+</body>
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- script for toggle sidebar button -->
+<script>
+    // $(document).ready(function () {
+
+    //     $('#sidebarCollapse').on('click', function () {
+    //         $('#sidebar').toggleClass('active');
+    //         $('#content').toggleClass('active');
+    //      });
+
+    // });
+</script>
+
+<!--[if lt IE 9]--/>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</html>
