@@ -31,6 +31,9 @@ td > p {
     padding-top:20px;
     z-index:1000;
   }
+  .signup-footer{
+      position: relative;
+  }
 
 #login-section form{
    padding: 5% 0 !important;
