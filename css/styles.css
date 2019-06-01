@@ -45,9 +45,12 @@ td > p {
         max-width: 100%;
         max-height: 50%;
     }
+
+    .signup-footer{
+       margin-top: 2%;
+    }
   }
 
 
   /* media queries */
-
   
