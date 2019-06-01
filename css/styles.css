@@ -22,6 +22,20 @@ td > p {
     font-weight: 600;
 }
 
+/* make a footer sticky */
+.footer {
+    position: absolute;
+    bottom: 0;
+    /* height: 60px; */
+    width: 100%;
+    padding-top:20px;
+    z-index:1000;
+  }
+
+#login-section form{
+   padding: 5% 0 !important;
+}
+
 /* firefox only css */
 @-moz-document url-prefix() { 
     .modal-image{
@@ -29,3 +43,8 @@ td > p {
         max-height: 50%;
     }
   }
+
+
+  /* media queries */
+
+  
