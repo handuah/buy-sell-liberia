@@ -4,14 +4,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale = 1">
-    <title>Login</title>
+    <title>Seller View</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/fontawesome-all.js"></script>
 </head>
 <body>
      <!-- NAVBAR  -->
-     <nav class="navbar navbar-expand-lg navbar-light bg-danger py-3">
+     <nav class="navbar navbar-expand-lg navbar-light bg-primary py-3">
         <div class="container">
                 <a class="navbar-brand text-white" href="index.html">Buy and Sell</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,7 +21,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a href="signup.html" class="btn btn-success">Signup</a>
+                        <a href="edit.html" class="btn btn-info btn-lg">Add New Product</a>
                     </li>
                             
                 </div>
@@ -29,34 +29,45 @@
       </nav>
       <!-- NAVABAR END -->
 
-      <!-- LOGIN BEGINS HERE -->
-      <section id="login-section">
+      <!-- SELLER VIEW BEGINS HERE -->
+      <section id="seller-section">
          <div class="container">
-          <div class="row">
+          <div class="row mt-5">
               <div class="col">
-                <h4 class="text-center mt-5">You have an account? Login here.</h4>
+                <h4 class="text-center">Your Products</h4>
             </div>
         </div>
             <div class="row my-5 justify-content-center align-items-center">
                     <div class="col-md-6">
-                        <form id="login-form" class="form-horizontal">
-                            <div class="form-group">
-                                <input type="text" name="username" id="username" class="form-control" placeholder="Username/Email address">
-                            </div>
-                            <div class="form-group">
-                                <input type="password" name="password" id="password" class="form-control" placeholder="Password">
-                            </div>
-                            <a href="seller.html" class="btn btn-primary" value="submit">Submit</a>
-                            <button class="btn btn-dark" value="reset">Reset</button>
-                        </form>
-                        <a href="signup.html" class="text-muted py-2">Already have an account? Click here!</a>
+                        <table class="table table-info table-hover table-bordered table-striped ">
+                            <thead scope="col">
+                                <th>Product Name</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><h6>Dell Inspiron</h6></td>
+                                    <td><a href="edit.html" class="btn btn-light"><i class="fas fa-edit"></i></a></i></td>
+                                    <td><a href="" class="btn btn-light"><i class="fas fa-trash-alt"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td><h6>Infinity Q60</h6></td>
+                                    <td><a href="edit.html" class="btn btn-light"><i class="fas fa-edit"></i></a></i></td>
+                                    <td><a href="" class="btn btn-light"><i class="fas fa-trash-alt"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td><h6>Pixel 3a XL</h6></td>
+                                    <td><a href="edit.html" class="btn btn-light"><i class="fas fa-edit"></i></a></i></td>
+                                    <td><a href="" class="btn btn-light"><i class="fas fa-trash-alt"></i></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>   
                     </div>
                 </div>   
           
         </div>
       </section>
-      <!-- LOGIN ENDS HERE -->
+      <!-- SELLER VIEW ENDS HERE -->
 
     <!-- FOOTER -->
     <footer  class="bg-primary py-3 footer">
