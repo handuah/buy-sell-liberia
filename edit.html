@@ -33,75 +33,68 @@
       <!-- SELLER VIEW BEGINS HERE -->
       <section id="product-edit-section">
          <div class="container">
-          <div class="row mt-5">
+
+          <div class="row mt-2">
               <div class="col">
                 <h4 class="text-center">Your Products</h4>
             </div>
         </div>
-            <div class="row my-5 justify-content-center align-items-center">
+
+            <div class="container">
+                <div class="row my-2">
                     <div class="col-md-6">
-                        <!-- bootstrap-imageupload. -->
- 
-            <div class="imageupload card">
- 
-                <div class="card-header">
- 
-                    <h3 class="card-title">Select Image file</h3>
- 
-                    <div class="btn-group mx-auto">
- 
-                        <button type="button" class="btn btn-light active">File</button>
- 
-                        <button type="button" class="btn btn-light">URL</button>
- 
-                    </div>
- 
-                </div>
- 
-                <div class="file-tab card-body">
- 
-                    <label class="btn btn-primary ">
- 
-                        <!-- <span>Browse</span>
-  -->
-                        <!-- The file is stored here. -->
- 
-                        <input type="file" name="image-file">
- 
-                    </label>
- 
-                    <button type="button" class="btn btn-danger">Delete image</button>
- 
-                </div>
- 
-                <div class="card-body">
- 
-                    <div class="input-group">
- 
-                        <input type="text" class="form-control" placeholder="Image URL">
- 
-                        <div class="input-group-btn">
- 
-                            <button type="button" class="btn btn-info">Submit</button>
- 
+                        <div class="form-group">
+                            <h6>Upload Product Image</h6>
+                            <div class="input-group">
+                                <span class="input-group-btn">
+                                    <span class="btn btn-info btn-file">
+                                        Browse… <input type="file" id="imgInp">
+                                    </span>
+                                </span>
+                                <input type="text" class="form-control" readonly>
+                            </div>
+                            <img id='img-upload'/>
                         </div>
- 
                     </div>
- 
-                    <button type="button" class="btn btn-danger">Remove</button>
- 
-                    <!-- The URL is stored here. -->
- 
-                    <input type="hidden" name="image-url">
- 
-                </div>
- 
+                    <div class="col-md-6">
+                            <form>
+                                <div class="form-group row mt-4">
+                                    <label for="product-name" class="col-sm-4 col-form-label">Product Name:</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group row mt-4">
+                                    <label for="product-description" class="col-sm-4 col-form-label">Description:</label>
+                                    <div class="col-sm-8">
+                                        <textarea name="product-description" id="" cols="30" rows="5" class="form-control"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group row mt-4">
+                                    <label for="product-price" class="col-sm-4 col-form-label">Prices:</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" name="product-price">
+                                    </div>
+                                </div>
+                                <div class="form-group row mt-4">
+                                    <label for="seller-name" class="col-sm-4 col-form-label">Uploaded by:</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" name="seller-name">
+                                    </div>
+                                </div>
+                                <div class="form-group row mt-4">
+                                    <label for="telno" class="col-sm-4 col-form-label">Telephone No:</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" name="telno">
+                                    </div>
+                                </div>
+                                <a href="seller.html" class="btn btn-block btn-primary">Submit <span><i class="far fa-hand-point-right"></i></span></a>
+                            </form>
+                        </div>
+                                    
             </div>
- 
- 
- 
-        </div>
-                    </div>   
+        </div>   
+
                     </div>
                 </div>   
           
@@ -110,7 +103,8 @@
       <!-- SELLER VIEW ENDS HERE -->
 
     <!-- FOOTER -->
-    <footer  class="bg-primary py-3 footer">
+
+    <footer  class="bg-primary py-2 footer">
        <p class="text-center py-2 text-white">Handuah &copy; 2019</p>
     </footer>
 
@@ -118,6 +112,7 @@
 <script src="js/jquery-3.3.1.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/bootstrap-upload-image.js"></script>
+
 <!-- script for toggle sidebar button -->
 <script>
     // $(document).ready(function () {
