@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale = 1">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap-image-upload.css"> -->
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/fontawesome-all.js"></script>
+</head>
+<body>
+     <!-- NAVBAR  -->
+     <nav class="navbar navbar-expand-lg navbar-light bg-primary py-3">
+        <div class="container">
+                <a class="navbar-brand text-white" href="index.html">Buy and Sell</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+<!--             
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="edit.html" class="btn btn-info btn-lg">Add New Product</a>
+                    </li>
+                            
+                </div> -->
+        </div>
+      </nav>
+      <!-- NAVABAR END -->
+
+      <!-- PRODUCTS VIEW BEGINS HERE -->
+      <section id="product-details-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card my-5">
+                        <div>
+                            <img src="img/dell-inpiron.jpg" alt="dell-inpiron" class="card-img-top">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h4 class="pt-5">Dell Inspiron</h4>
+                    <table class="table table-hover my-5">
+                        <tbody>
+                            <tr>
+                                <td><p>Description</p></td>
+                                <td><span class="description-text">
+                                        Intel Core i7-7500U, 15.6-Inch FHD, 2TB, 8GB, 4GB VGA, En-Ar Keyboard, Win 10, Glossy Black
+                                </span></td>
+                            </tr>
+                            <tr>
+                                <td><p>Price</p></td>
+                                <td><span class="description-text">
+                                    GHC 4000 </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                
+                                <td><p>Uploaded By</p></td>
+                                <td><span class="description-text">
+                                    Handuah </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><p>Tel No</p></td>
+                                <td><span class="description-text">
+                                    +200-00-00-00 </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a href="index.html" class="btn btn-primary"> <span><i class="fas fa-chevron-circle-left"></i></span> Back to Homepage</a>     
+                </div>
+                
+            </div>
+        </div>
+      </section>
+      <!-- PRODUCTS VIEW ENDS HERE -->
+
+    <!-- FOOTER -->
+    <footer  class="bg-primary py-2 footer">
+       <p class="text-center py-2 text-white">Handuah &copy; 2019</p>
+    </footer>
+
+</body>
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-upload-image.js"></script>
+<!-- script for toggle sidebar button -->
+<script>
+    // $(document).ready(function () {
+
+    //     $('#sidebarCollapse').on('click', function () {
+    //         $('#sidebar').toggleClass('active');
+    //         $('#content').toggleClass('active');
+    //      });
+
+    // });
+    var $imageupload = $('.imageupload');
+    $imageupload.imageupload({
+ 
+        maxWidth: 200,
+
+        maxHeight: 200,
+
+        // maxFileSizeKb: 3048
+
+        });
+
+</script>
+
+<!--[if lt IE 9]--/>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</html>
